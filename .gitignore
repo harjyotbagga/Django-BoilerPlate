@@ -11,7 +11,9 @@ local_settings.py
 db.sqlite3
 db.sqlite3-journal
 media
-static_root/
+# Add 'static_root/' to .gitignore while production as the static files reqd here are actually not need during production.
+# (It is mainly for 'django debug toolbar'
+# static_root/
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
