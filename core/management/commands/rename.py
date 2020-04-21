@@ -26,5 +26,5 @@ class Command(BaseCommand):
                 file.write(filedata)
 
         os.rename(folder_to_rename, new_project_name)
-        self.stdout.write(self.style.SUCCESS('Project has been successfully renamed to %s' %(new_project_name)))
+        self.stdout.write(self.style.SUCCESS('Project has been successfully renamed to %s. Make sure you rename the \'main\' folder in the \'templates\' and \'static\' folders. %(new_project_name)))
 
